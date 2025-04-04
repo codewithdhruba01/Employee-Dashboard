@@ -10,6 +10,7 @@ body{
     width: 100%;
     background: white;
     position: relative;
+    display: flex;
 }
 
 #manu{
@@ -61,4 +62,90 @@ body{
     color: rgb(138, 138, 138);
     font-weight: 300px;
     transition: 0.5s ease;
+}
+#interface{
+    width: calc(100% - 300px);
+}
+#interface .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 30px;
+    border-bottom: 3px solid rgba(176, 30, 30, 0.852);
+}
+#interface .navigation .search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+#interface .navigation .search i{
+    margin-right: 12px;
+}
+#interface .navigation .search input{
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+#interface .navigation .profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#interface .navigation .profile i{
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: 400;
+}
+#interface .navigation .profile img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.i-name{
+    color: rgb(78, 76, 76);
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.values{
+    padding: 30px 300px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.values .val-box{
+    background: #cac5c5;
+    width: 235px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.values .val-box i{
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background: rgba(176, 30, 30, 0.852);
+    margin-right: 15px;
+}
+.values .val-box h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+.values .val-box span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #323334;
 }
