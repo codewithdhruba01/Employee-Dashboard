@@ -8,7 +8,7 @@
 
 body{
     width: 100%;
-    background: white;
+    background: rgb(239, 238, 238);
     position: relative;
     display: flex;
 }
@@ -17,6 +17,9 @@ body{
     background: black;
     width: 300px;
     height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 #manu .logo{
     display: flex;
@@ -65,6 +68,8 @@ body{
 }
 #interface{
     width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
 }
 #interface .navigation{
     display: flex;
@@ -73,13 +78,15 @@ body{
     background: #fff;
     padding: 15px 30px;
     border-bottom: 3px solid rgba(176, 30, 30, 0.852);
+    position: fixed;
+    width: calc(100% - 300px);
 }
 #interface .navigation .search{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 10px 14px;
-    border: 1px solid #d7dbe6;
+    border: 1px solid #79797c;
     border-radius: 4px;
 }
 #interface .navigation .search i{
@@ -99,18 +106,33 @@ body{
     margin-right: 20px;
     font-size: 17px;
     font-weight: 400;
+    cursor: pointer;
 }
 #interface .navigation .profile img{
     width: 30px;
     height: 30px;
     object-fit: cover;
     border-radius: 50%;
+    cursor: pointer;
+}
+.n1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#manu-btn{
+    color: rgba(176, 30, 30, 0.852);
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
 }
 .i-name{
     color: rgb(78, 76, 76);
     padding: 30px 30px 0 30px;
     font-size: 24px;
     font-weight: 600;
+    margin-top: 70px;
 }
 .values{
     padding: 30px 300px 0 30px;
@@ -148,4 +170,66 @@ body{
     font-size: 14px;
     font-weight: 500;
     color: #323334;
+}
+.board{
+    width: 94%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    background: #dfdede;
+    border-radius: 8px;
+}
+.board img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.board h5{
+    font-weight: 600;
+    font-size: 15px;
+}
+.board p{
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(75, 74, 74);
+}
+.board .people{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+}
+table{
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: #eef0f3;
+}
+thead td{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: start;
+    padding: 15px;
+    background: #b7b7b7;
+}
+tbody tr td{
+    padding: 10px 15px;
+}
+.active p{
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 40px;
+    background: #06590d;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+.edit a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(51, 47, 97);
 }
