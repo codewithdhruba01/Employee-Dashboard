@@ -11,6 +11,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquary.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <title>Employee-Dashbord</title>
 </head>
@@ -288,6 +290,17 @@
 
 
 
+<script>
+    const menuBtn = document.getElementById('manu-btn');
+    const sidebar = document.getElementById('manu');
+    const interface = document.getElementById('interface');
+  
+    menuBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+      interface.classList.toggle('active');
+    });
+  </script>
+  
 
 </body>
 </html>
